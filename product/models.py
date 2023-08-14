@@ -3,21 +3,23 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils.text import slugify
 from django.urls import reverse
+from parler.models import TranslatableModel, TranslatedFields
 
 class Product(models.Model):
-    PRDName = models.CharField(max_length=100,verbose_name=_("Product Name"))
-    PRDCategory = models.ForeignKey('Category' , on_delete=models.CASCADE , blank=True, null=True ,verbose_name=_("Category "))
-    PRDBrand = models.ForeignKey('Brand' , on_delete=models.CASCADE , blank=True, null=True ,verbose_name=_("Brand "))
-    PRDDesc = models.TextField(verbose_name=_("Description"))
-    PRDImage = models.ImageField(upload_to='prodcut/' , verbose_name=_("Image") , blank=True, null=True)
-    PRDPrice = models.DecimalField(max_digits=5  , decimal_places=2 , verbose_name=_("Price"))
-    PRDDiscountPrice = models.DecimalField(max_digits=5  , decimal_places=2 , verbose_name=_("Discount Price"))
-    PRDCost = models.DecimalField(max_digits=5 , decimal_places=2 , verbose_name=_("Cost"))
-    PRDCreated = models.DateTimeField(verbose_name=_("Created At"))
-    PRDSLug = models.SlugField(blank=True, null=True , verbose_name=_("Product URL"))
-    PRDISNew = models.BooleanField(default=True , verbose_name=_("New Product "))
-    PRDISBestSeller = models.BooleanField(default=False , verbose_name=_("Best Seller"))
-
+    translations = TranslatedFields(
+    PRDName = models.CharField(max_length=100,verbose_name=_("Product Name")),
+    PRDCategory = models.ForeignKey('Category' , on_delete=models.CASCADE , blank=True, null=True ,verbose_name=_("Category ")),
+    PRDBrand = models.ForeignKey('Brand' , on_delete=models.CASCADE , blank=True, null=True ,verbose_name=_("Brand ")),
+    PRDDesc = models.TextField(verbose_name=_("Description")),
+    PRDImage = models.ImageField(upload_to='prodcut/' , verbose_name=_("Image") , blank=True, null=True),
+    PRDPrice = models.DecimalField(max_digits=5  , decimal_places=2 , verbose_name=_("Price")),
+    PRDDiscountPrice = models.DecimalField(max_digits=5  , decimal_places=2 , verbose_name=_("Discount Price")),
+    PRDCost = models.DecimalField(max_digits=5 , decimal_places=2 , verbose_name=_("Cost")),
+    PRDCreated = models.DateTimeField(verbose_name=_("Created At")),
+    PRDSLug = models.SlugField(blank=True, null=True , verbose_name=_("Product URL")),
+    PRDISNew = models.BooleanField(default=True , verbose_name=_("New Product ")),
+    PRDISBestSeller = models.BooleanField(default=False , verbose_name=_("Best Seller")),
+    )
     def save(self,*args, **kwargs):
         if not self.PRDSLug:
             self.PRDSLug = slugify(self.PRDName)
@@ -95,5 +97,5 @@ class Product_Accessories(models.Model):
 class Order_product(models.Model):
     product=models.ForeignKey(Product,on_delete=models.CASCADE,verbose_name=_("Product"))
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("User"))
-    quantity = models.IntegerField(default=1)
+    quantity = models.IntegerField(default=1,verbose_name=_("Quantity"))
 
