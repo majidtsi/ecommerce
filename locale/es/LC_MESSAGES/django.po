@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-14 14:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+msgid "English"
+msgstr "Inglés"
+
+msgid "French"
+msgstr "Francés"
+
+msgid "Spanish"
+msgstr "Español"
+#: .\accounts\models.py:13
+msgid "user"
+msgstr ""
+
+#: .\accounts\models.py:15
+msgid "IMAGE"
+msgstr ""
+
+#: .\accounts\models.py:18
+msgid "join date"
+msgstr ""
+
+#: .\accounts\models.py:25
+msgid "Profile"
+msgstr ""
+
+#: .\accounts\models.py:26
+msgid "Profiles"
+msgstr ""
+
+#: .\ecommerce\settings.py:127
+msgid "English"
+msgstr ""
+
+#: .\ecommerce\settings.py:128
+msgid "French"
+msgstr ""
+
+#: .\ecommerce\settings.py:129
+msgid "Spanish"
+msgstr ""
+
+#: .\ecommerce\settings.py:130
+msgid "Italian"
+msgstr ""
+
+#: .\product\models.py:8
+msgid "Product Name"
+msgstr ""
+
+#: .\product\models.py:9
+msgid "Category "
+msgstr ""
+
+#: .\product\models.py:10
+msgid "Brand "
+msgstr ""
+
+#: .\product\models.py:11 .\product\models.py:39
+msgid "Description"
+msgstr ""
+
+#: .\product\models.py:12 .\product\models.py:40 .\product\models.py:62
+msgid "Image"
+msgstr ""
+
+#: .\product\models.py:13
+msgid "Price"
+msgstr ""
+
+#: .\product\models.py:14
+msgid "Discount Price"
+msgstr ""
+
+#: .\product\models.py:15
+msgid "Cost"
+msgstr ""
+
+#: .\product\models.py:16
+msgid "Created At"
+msgstr ""
+
+#: .\product\models.py:17
+msgid "Product URL"
+msgstr ""
+
+#: .\product\models.py:18
+msgid "New Product "
+msgstr ""
+
+#: .\product\models.py:19
+msgid "Best Seller"
+msgstr ""
+
+#: .\product\models.py:27 .\product\models.py:61 .\product\models.py:70
+#: .\product\models.py:84 .\product\models.py:96
+msgid "Product"
+msgstr ""
+
+#: .\product\models.py:28
+msgid "Products"
+msgstr ""
+
+#: .\product\models.py:37
+msgid "Name"
+msgstr ""
+
+#: .\product\models.py:38
+msgid "Main Category"
+msgstr ""
+
+#: .\product\models.py:43
+msgid "Category"
+msgstr ""
+
+#: .\product\models.py:44
+msgid "Categories"
+msgstr ""
+
+#: .\product\models.py:54
+msgid "Brand"
+msgstr ""
+
+#: .\product\models.py:55
+msgid "Brands"
+msgstr ""
+
+#: .\product\models.py:72
+msgid "Alternatives"
+msgstr ""
+
+#: .\product\models.py:75
+msgid "Product Alternative"
+msgstr ""
+
+#: .\product\models.py:76
+msgid "Product Alternatives"
+msgstr ""
+
+#: .\product\models.py:86
+msgid "Accessories"
+msgstr ""
+
+#: .\product\models.py:89
+msgid "Product Accessory"
+msgstr ""
+
+#: .\product\models.py:90
+msgid "Product Accessories"
+msgstr ""
+
+#: .\product\models.py:97
+msgid "User"
+msgstr ""
